@@ -24,6 +24,7 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
 }
+
 /* =============== HEADER ================== */
 header {
   position: fixed;
@@ -101,12 +102,12 @@ span {
 
 /* =============================================== */
 
-section{
+section {
   min-height: 100vh;
   padding: 10rem 15%;
 }
 
-.home{
+.home {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,44 +115,45 @@ section{
   margin: 1.2rem;
 }
 
-.home-content{
+.home-content {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   align-items: right;
 }
-.home-content h1{
+
+.home-content h1 {
   font-size: 8rem;
   font-weight: 700;
   margin-top: 1.5rem;
   line-height: 1;
 }
 
-.home-content h3{
- margin: 1rem 0;
- font-size: 4rem; 
+.home-content h3 {
+  margin: 1rem 0;
+  font-size: 4rem;
 }
 
-.home-content p{
+.home-content p {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.8;
 }
 
-.home-img img{
+.home-img img {
   width: 32vw;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--text-color-secondary);
   transition: .4 s ease-in-out;
 }
 
-.home-img img:hover{
+.home-img img:hover {
   box-shadow: 0 0 2px var(--text-color-secondary),
-              0 0 25px var(--text-color-secondary),
-              0 0 40px var(--text-color-secondary);
+    0 0 25px var(--text-color-secondary),
+    0 0 40px var(--text-color-secondary);
 }
 
-.social-icons a{
+.social-icons a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -165,19 +167,20 @@ section{
   transition: .3s ease-in-out;
   color: white;
 }
-.social-icons a:hover{
+
+.social-icons a:hover {
   background-color: var(--text-color-secondary);
   color: var(--text-color);
   transform: scale(1) translateY(-5px);
   box-shadow: 0 0 15px var(--text-color-secondary);
 }
 
-.btn-group{
+.btn-group {
   display: flex;
   gap: 1.5rem;
 }
 
-.btn{
+.btn {
   display: inline-block;
   padding: 1rem 3rem;
   background-color: 0 0 15px var(--text-color-secondary);
@@ -190,23 +193,142 @@ section{
   transition: .3s ease-in-out;
 }
 
-.btn:hover{
+.btn:hover {
   box-shadow: 0 0 25px var(--text-color-secondary),
-              0 0 50px var(--text-color-secondary);
+    0 0 50px var(--text-color-secondary);
   transform: scale(1.05);
 }
 
-.btn-group a:nth-of-type(2){
+.btn-group a:nth-of-type(2) {
   background: black;
   color: var(--text-color-secondary);
   border: 2px solid var(--text-color-secondary);
-  box-shadow: 0 0 15px  transparent;
+  box-shadow: 0 0 15px transparent;
 }
-.btn-group a:nth-of-type(2){
+
+.btn-group a:nth-of-type(2) {
   box-shadow: 2px solid var(--text-color-secondary);
   background-color: var(--text-color-secondary);
   color: black;
 }
 
+/* ===================SOBRE======================= */
 
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  background: var(--second-bg-color)
+}
 
+.bout-img img {
+  border-radius: 50%;
+  width: 32vw;
+  border: 50%;
+  box-shadow: 0 0 15px var(--text-color-secondary);
+  transition: .4 ease-in-out
+}
+
+.bout-img img:hover {
+  border-radius: 50%;
+  box-shadow: 0 0 2px var(--text-color-secondary),
+    0 0 25px var(--text-color-secondary),
+    0 0 40px var(--text-color-secondary);
+}
+
+.about-content h2 {
+  font-size: 7rem;
+  text-align: left;
+}
+
+.about-content p {
+  font-size: 1.8rem;
+}
+
+.about-content .btn {
+  margin: 3rem 0;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-color-secondary);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+/* =-=============SERVIÇOS================= */
+
+.heading {
+  text-align: center;
+  font-size: 7rem;
+  margin: 5rem 0;
+}
+
+.services {
+  background-color: var(--bg-color);
+  color: black;
+}
+
+.services h2 {
+  color: var(--text-color);
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.service-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text-color-secondary);
+  height: 500px;
+  border-radius: 3rem;
+  cursor: pointer;
+  border: 5px solid transparent;
+  transition: .4s ease-in-out;
+}
+
+.service-box:hover {
+  background-color: transparent;
+  color: var(--text-color-secondary);
+  border: 5px solid var(--text-color-secondary);
+  transform: scale(1.03);
+  box-shadow:
+    0 0 10px var(--text-color-secondary);
+}
+
+.service-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+.service-info h4 {
+  font-size: 4rem;
+  margin: 2rem 0;
+  font-weight: 600;
+}
+
+.service-info p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.service-info i {
+  font-size: 8rem;
+  margin: 1rem 0;
+}
