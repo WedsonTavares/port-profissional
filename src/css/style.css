@@ -24,7 +24,7 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
 }
-
+/* =============== HEADER ================== */
 header {
   position: fixed;
   width: 100%;
@@ -98,3 +98,115 @@ span {
 .gradient-btn:hover {
   transform: scale(1.05);
 }
+
+/* =============================================== */
+
+section{
+  min-height: 100vh;
+  padding: 10rem 15%;
+}
+
+.home{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15rem;
+  margin: 1.2rem;
+}
+
+.home-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-items: right;
+}
+.home-content h1{
+  font-size: 8rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  line-height: 1;
+}
+
+.home-content h3{
+ margin: 1rem 0;
+ font-size: 4rem; 
+}
+
+.home-content p{
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.home-img img{
+  width: 32vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--text-color-secondary);
+  transition: .4 s ease-in-out;
+}
+
+.home-img img:hover{
+  box-shadow: 0 0 2px var(--text-color-secondary),
+              0 0 25px var(--text-color-secondary),
+              0 0 40px var(--text-color-secondary);
+}
+
+.social-icons a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  padding: 1rem;
+  background: transparent;
+  border: 2px solid var(--text-color-secondary);
+  border-radius: 10px;
+  color: var(--text-color-secondary);
+  margin: 3rem .5rem;
+  transition: .3s ease-in-out;
+  color: white;
+}
+.social-icons a:hover{
+  background-color: var(--text-color-secondary);
+  color: var(--text-color);
+  transform: scale(1) translateY(-5px);
+  box-shadow: 0 0 15px var(--text-color-secondary);
+}
+
+.btn-group{
+  display: flex;
+  gap: 1.5rem;
+}
+
+.btn{
+  display: inline-block;
+  padding: 1rem 3rem;
+  background-color: 0 0 15px var(--text-color-secondary);
+  box-shadow: 0 0 15px var(--text-color-secondary);
+  border-radius: 3rem;
+  font-size: 1.8rem;
+  color: black;
+  border: 2px solid transparent;
+  font-weight: 600;
+  transition: .3s ease-in-out;
+}
+
+.btn:hover{
+  box-shadow: 0 0 25px var(--text-color-secondary),
+              0 0 50px var(--text-color-secondary);
+  transform: scale(1.05);
+}
+
+.btn-group a:nth-of-type(2){
+  background: black;
+  color: var(--text-color-secondary);
+  border: 2px solid var(--text-color-secondary);
+  box-shadow: 0 0 15px  transparent;
+}
+.btn-group a:nth-of-type(2){
+  box-shadow: 2px solid var(--text-color-secondary);
+  background-color: var(--text-color-secondary);
+  color: black;
+}
+
+
+
